@@ -34,6 +34,7 @@ public class ChessBoradProblem {
         if (size==1){
             return;
         }
+
         int subSize = size/2;
 
         //哪几种类型的骨牌
