@@ -60,7 +60,7 @@ public class LCS {
 
     public static void main(String[] args) {
         LCS lcs = new LCS();
-        int findLCS = lcs.findLCS("android", "random");
+        int findLCS = lcs.findLCS("androidwe", "randome");
         System.out.println("最长子序列长度："+findLCS);
     }
 }

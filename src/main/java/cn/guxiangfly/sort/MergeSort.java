@@ -5,7 +5,7 @@ import java.util.Arrays;
 
 /**
  * MergeSort
- *
+ * 将两个有序的数组 合并成一个有序的数组
  * @author guxiang
  * @date 2018/1/15
  */

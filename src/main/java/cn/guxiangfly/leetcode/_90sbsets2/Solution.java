@@ -1,4 +1,4 @@
-package cn.guxiangfly.leetcode._78sbsets;
+package cn.guxiangfly.leetcode._90sbsets2;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -14,15 +14,13 @@ import java.util.List;
 Note: The solution set must not contain duplicate subsets.
 
 For example,
-If nums = [1,2,3], a solution is:
+If nums = [1,2,2], a solution is:
 
         [
-            [3],
-            [1],
             [2],
-            [1,2,3],
-            [1,3],
-            [2,3],
+            [1],
+            [1,2,2],
+            [2,2],
             [1,2],
             []
         ]
@@ -54,6 +52,8 @@ public class Solution {
                     r.add(nums[i]);
                 }
             }
+            if (ans.contains(r))
+                return;
             ans.add(r);
             return;
         }
@@ -65,16 +65,16 @@ public class Solution {
         robot(idx+1, nums);
     }
 
-    public List<List<Integer>> subsets(int[] nums) {
+    public List<List<Integer>> subsetsWithDup(int[] nums) {
         ans.clear();
         robot(0,nums);
         return ans;
     }
 
     public static void main(String[] args) {
-        int[] nums = {1,2,3};
+        int[] nums = {1,2,2};
         Solution solution = new Solution();
-        List<List<Integer>> subsets = solution.subsets(nums);
+        List<List<Integer>> subsets = solution.subsetsWithDup(nums);
         for (List<Integer> subset : subsets) {
             System.out.println(subset);
         }
