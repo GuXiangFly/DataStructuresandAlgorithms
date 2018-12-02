@@ -4,7 +4,6 @@ package cn.guxiangfly.leetcode;
  * @author: xianggu@ebay.com
  * @date : 2018 10/24/18
  * @desc : JavaHomeWork
-
 */
 
 
@@ -12,7 +11,6 @@ public class P_110_Balanced_Binary_Tree {
 
     public boolean isBalanced(TreeNode root) {
         if (root==null) return true;
-
         int left_height = height(root.left);
         int right_height = height(root.right);
 

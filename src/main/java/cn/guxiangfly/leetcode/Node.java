@@ -1,10 +1,10 @@
 package cn.guxiangfly.leetcode;
 
-public class ListNode {
+public class Node {
     int val = 0;
-    public ListNode next;
+    Node next;
 
-    ListNode(int x) {
+    Node(int x) {
         val = x;
     }
 }
