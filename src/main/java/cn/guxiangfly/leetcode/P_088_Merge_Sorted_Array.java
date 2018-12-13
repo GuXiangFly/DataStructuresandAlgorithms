@@ -53,7 +53,7 @@ public class P_088_Merge_Sorted_Array {
         int cur = 0;
         int pm = 0;
         int pn = 0;
-        while (pm < m || pn < n) {
+        while (pm < m && pn < n) {
             if (nums1[pm] <= nums2[pn]) {
                 res[cur] = nums1[pm];
                 pm++;
@@ -65,6 +65,10 @@ public class P_088_Merge_Sorted_Array {
                 pn++;
                 cur++;
             }
+        }
+
+        if (pm<m){
+
         }
 
         nums1 = res;

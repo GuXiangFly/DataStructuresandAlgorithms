@@ -1,5 +1,7 @@
 package cn.guxiangfly.leetcode;
 
+import java.util.concurrent.Executors;
+
 /**
  * @author: xianggu@ebay.com
  * @date : 2018 10/25/18
@@ -17,7 +19,7 @@ public class P_141_Linked_List_Cycle {
                 return true;
             }
         }
-
+        Executors.newCachedThreadPool();
         return false;
     }
 
