@@ -8,7 +8,9 @@ package cn.guxiangfly.swordoffer;
 public class 二叉树的深度 {
 
     public int TreeDepth(TreeNode root) {
-        if (root==null) return 0;
+        if (root==null) {
+            return 0;
+        }
 
         int rightHight = TreeDepth(root.right);
         int leftHight = TreeDepth(root.left);

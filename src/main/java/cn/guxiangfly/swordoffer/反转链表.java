@@ -4,12 +4,25 @@ package cn.guxiangfly.swordoffer;
  * @author: xianggu@ebay.com
  * @date : 2018 11/25/18
  * @desc : DataStructuresandAlgorithms
- *
- *  A-> B ->C
- *
- *  翻转 B -C  A C B
+ * <p>
+ * A-> B ->C
+ * <p>
+ * 翻转 B -C  A C B
  */
 public class 反转链表 {
 
+    public ListNode ReverseList(ListNode head) {
+        if (head == null || head.next == null) {
+            return head;
+        }
+        ListNode pre = null;
 
+        if (head!=null){
+            ListNode temp = head.next;
+            head.next = pre;
+            pre = head;
+            head = temp;
+        }
+        return pre;
+    }
 }
