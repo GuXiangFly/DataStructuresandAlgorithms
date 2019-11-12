@@ -28,12 +28,41 @@ public class P_155_MinStack {
      * space : O(n)
      */
 
-    private Stack<Integer> stack;
-    private Stack<Integer> minStack;
+    public static  Stack<Integer> stack;
+    public static  Stack<Integer> minStack;
 
-    public P_155_MinStack() {
+    static {
         stack = new Stack<Integer>();
         minStack = new Stack<Integer>();
+    }
+
+    public void push(int x){
+        stack.push(x);
+        if (!minStack.isEmpty()){
+            int min = minStack.peek();
+            if (x<=min){
+                minStack.push(x);
+            }
+        }else{
+            minStack.push(x);
+        }
+    }
+
+    public void pop(){
+        int x = stack.pop();
+        if (!minStack.isEmpty()){
+            if (x==minStack.peek()){
+                minStack.pop();
+            }
+        }
+    }
+
+    public int top(){
+        return stack.peek();
+    }
+
+    public int getMin(){
+        return minStack.peek();
     }
 
 }

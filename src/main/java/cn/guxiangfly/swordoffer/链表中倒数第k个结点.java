@@ -13,8 +13,10 @@ public class 链表中倒数第k个结点 {
         ListNode fast = head;
         for (int i = 0; i < k; i++) {
 
-            if (fast == null)
+            if (fast == null){
                 return null;
+            }
+
             fast = fast.next;
         }
         while (fast != null){

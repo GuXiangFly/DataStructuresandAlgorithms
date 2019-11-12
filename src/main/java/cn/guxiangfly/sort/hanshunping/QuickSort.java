@@ -9,7 +9,7 @@ import java.util.Arrays;
 public class QuickSort {
 
     public static void main(String[] args) {
-        int[] arr = {54,26,93,17,77,31,44,55,20};
+        int[] arr = {54,26,93,77,77,31,44,55,77};
         quickSort(arr,0,arr.length-1);
         System.out.println(Arrays.toString(arr));
     }
@@ -59,6 +59,7 @@ public class QuickSort {
         if (right>l){
             quickSort(arr,l,right);
         }
+
 
     }
 }
