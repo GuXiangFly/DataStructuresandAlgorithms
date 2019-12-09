@@ -1,7 +1,5 @@
 package cn.guxiangfly.leetcode;
 
-import cn.guxiangfly.linkList.Node;
-
 import java.util.HashMap;
 
 /**
