@@ -8,6 +8,9 @@ package cn.guxiangfly.swordoffer;
  * A-> B ->C
  * <p>
  * 翻转 B -C  A C B
+ *
+ * thnph,hnpht
+ * 铁火牛排好，和你跑火炭
  */
 public class 反转链表 {
 

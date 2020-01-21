@@ -8,7 +8,7 @@ import java.util.ArrayList;
  **/
 public class 从尾到头打印链表 {
     public ArrayList<Integer> printListFromTailToHead(ListNode listNode) {
-        ArrayList<Integer> res = new ArrayList<>();
+        ArrayList<Integer> res = new ArrayList<Integer>();
         if (listNode==null){
             return res;
         }
