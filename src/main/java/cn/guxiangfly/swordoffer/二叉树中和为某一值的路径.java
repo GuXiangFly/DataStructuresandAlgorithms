@@ -28,7 +28,7 @@ public class 二叉树中和为某一值的路径 {
         current.add(root.val);
         /** 這代表是在叶子节点中了*/
         if (root.left==null && root.right==null && sum==root.val){
-            res.add(new ArrayList<>(current));
+            res.add(new ArrayList<Integer>(current));
 
             /** 由于这是一个递归 需要把当前加入current的元素去掉*/
             current.remove(current.size()-1);
