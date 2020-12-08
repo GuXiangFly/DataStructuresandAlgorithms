@@ -27,4 +27,28 @@ public class P_001_Two_Sum {
 
         return res;
     }
+
+
+    public int[] twoSum_v2(int[] nums, int target) {
+        if (nums==null || nums.length<2){
+            return new int[]{-1,-1};
+        }
+
+        int[] res = new int[]{-1,-1};
+
+        HashMap<Integer, Integer> integerIntegerHashMap = new HashMap<>();
+
+        for (int i = 0; i < nums.length; i++) {
+            if (integerIntegerHashMap.containsKey(target-nums[i])){
+                res[0] = i;
+                res[i] = integerIntegerHashMap.get(target-nums[i]);
+                break;
+             }else {
+                integerIntegerHashMap.put(nums[i],i);
+            }
+        }
+
+        return res;
+    }
+
 }
