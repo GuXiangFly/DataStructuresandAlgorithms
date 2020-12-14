@@ -72,14 +72,14 @@ public class P_021_MergeTwoSortedList {
             }
         }
 
-        while (l1 == null){
+        while (l1 != null){
             ListNode newNode = new ListNode(l1.val);
             cur.next = newNode;
             cur = cur.next;
             l1 = l1.next;
         }
 
-        while (l2 == null){
+        while (l2 != null){
             ListNode newNode = new ListNode(l2.val);
             cur.next = newNode;
             cur = cur.next;
