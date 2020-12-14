@@ -27,4 +27,10 @@ public class 数组中重复的数字 {
         }
         return false;
     }
+
+    public int findRepeatNumber(int[] nums) {
+       // if (nums)
+
+        return -1;
+    }
 }
