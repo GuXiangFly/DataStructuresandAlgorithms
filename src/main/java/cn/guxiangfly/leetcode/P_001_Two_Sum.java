@@ -41,7 +41,7 @@ public class P_001_Two_Sum {
         for (int i = 0; i < nums.length; i++) {
             if (integerIntegerHashMap.containsKey(target-nums[i])){
                 res[0] = i;
-                res[i] = integerIntegerHashMap.get(target-nums[i]);
+                res[1] = integerIntegerHashMap.get(target-nums[i]);
                 break;
              }else {
                 integerIntegerHashMap.put(nums[i],i);
@@ -50,5 +50,7 @@ public class P_001_Two_Sum {
 
         return res;
     }
+
+
 
 }

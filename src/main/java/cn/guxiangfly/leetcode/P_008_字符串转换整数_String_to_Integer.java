@@ -5,12 +5,16 @@ package cn.guxiangfly.leetcode;
  * @date : 2018 12/2/18
  * @desc : DataStructuresandAlgorithms
  */
-public class P_008_String_to_Integer {
+public class P_008_字符串转换整数_String_to_Integer {
 
     public int myAtoi(String str) {
-        if (str==null) return 0;
+        if (str==null) {
+            return 0;
+        }
         str = str.trim();
-        if (str.length() == 0) return 0;
+        if (str.length() == 0) {
+            return 0;
+        }
         char[] arr = str.toCharArray();
         int firstchar =arr[0];
         int sign =1;

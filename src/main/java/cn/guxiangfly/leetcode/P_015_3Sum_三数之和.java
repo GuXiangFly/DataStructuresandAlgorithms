@@ -26,7 +26,7 @@ import java.util.List;
  * <p>
  * -1 -1 0 4 2  -6
  */
-public class P_015_3Sum {
+public class P_015_3Sum_三数之和 {
     public List<List<Integer>> threeSum(int[] nums) {
         List<List<Integer>> res = new ArrayList<>();
         Arrays.sort(nums);
