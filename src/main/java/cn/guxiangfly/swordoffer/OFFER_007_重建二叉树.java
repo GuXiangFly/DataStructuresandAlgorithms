@@ -7,7 +7,7 @@ import java.util.Map;
  * @Author guxiang02
  * @Date 2020/1/20 17:37
  **/
-public class 重建二叉树 {
+public class OFFER_007_重建二叉树 {
     /**
      * 给定：
      * 前序遍历是：[3, 9, 20, 15, 7]

@@ -28,7 +28,7 @@ public class UnionFind {
     public void unionElement(int p,int q){
         int pID = find(p);
         int qID = find(q);
-        
+
         if (pID ==qID){
             return;
         }

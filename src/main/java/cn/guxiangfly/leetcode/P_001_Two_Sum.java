@@ -22,6 +22,7 @@ public class P_001_Two_Sum {
                 res[1] =i;
                 break;
             }
+
             hashmap.put(nums[i], i);
         }
 

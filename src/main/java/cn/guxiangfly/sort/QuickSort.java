@@ -135,6 +135,27 @@ public class QuickSort {
     }
 
 
+    public static void  quicksort4(int[] arr, int low, int high) {
+
+        if (arr == null || arr.length == 1){
+            return;
+        }
+        int i = low;
+        int j = high;
+        int pivot = arr[i];
+
+        while (i<j){
+            while (arr[j] >= pivot && i<j){
+                j -- ;
+            }
+            if (arr[j]< pivot && i<j){
+                swap(arr,i,j);
+            }
+        }
+
+
+    }
+
 
 
 }

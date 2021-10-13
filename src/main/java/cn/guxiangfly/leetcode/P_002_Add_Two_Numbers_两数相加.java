@@ -126,4 +126,65 @@ public class P_002_Add_Two_Numbers_两数相加 {
         return dummy.next;
     }
 
+
+
+    public ListNode addTwoNumbers4(ListNode l1, ListNode l2) {
+        ListNode dummy = new ListNode(0);
+        ListNode curr = dummy;
+        int jinwei = 0;
+        while (l1 != null && l2!=null){
+            int total = l1.val + l2.val + jinwei;
+            ListNode tempNode = new ListNode(0);
+            if (total>=10){
+                tempNode = new ListNode(total-10);
+                jinwei =1;
+            }else {
+                tempNode = new ListNode(total);
+                jinwei = 0;
+            }
+
+            curr.next = tempNode;
+            curr = curr.next;
+            l1 = l1.next;
+            l2 = l2.next;
+        }
+        while (l1!=null){
+            int total = jinwei + l1.val;
+            ListNode tempNode = new ListNode(0);
+            if (total>=10){
+                tempNode = new ListNode(total-10);
+                jinwei =1;
+            }else {
+                tempNode = new ListNode(total);
+                jinwei = 0;
+            }
+
+            curr.next= tempNode;
+            curr = curr.next;
+            l1 = l1.next;
+        }
+
+        while (l2 != null){
+            int total = jinwei + l2.val;
+            ListNode tempNode = new ListNode(0);
+            if (total>=10){
+                tempNode = new ListNode(total-10);
+                jinwei =1;
+            }else {
+                tempNode = new ListNode(total);
+                jinwei = 0;
+            }
+            curr.next = tempNode;
+            curr = curr.next;
+            l2 = l2.next;
+
+        }
+
+        if (jinwei != 0){
+            curr.next = new ListNode(jinwei);
+        }
+
+        return dummy.next;
+    }
+
 }
